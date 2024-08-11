@@ -1,0 +1,615 @@
+[
+  {
+    "id": 4,
+    "up": 1954661615,
+    "down": 48290433409,
+    "total": 53687091200,
+    "remark": "mahsa mashhadifam",
+    "enable": true,
+    "expiryTime": 0,
+    "clientStats": [
+      {
+        "id": 2,
+        "inboundId": 4,
+        "enable": true,
+        "email": "rsff54@x-ui-english.dev",
+        "up": 19079609089,
+        "down": 401987453726,
+        "expiryTime": 0,
+        "total": 0
+      }
+    ],
+    "listen": "",
+    "port": 22918,
+    "protocol": "vless",
+    "settings": "{\n  \"clients\": [\n    {\n      \"id\": \"d27a61a0-f087-4958-bf52-7119b06ff857\",\n      \"flow\": \"xtls-rprx-direct\",\n      \"email\": \"rsff54@x-ui-english.dev\",\n      \"limitIp\": \"0\",\n      \"totalGB\": 0,\n      \"expiryTime\": 0\n    }\n  ],\n  \"decryption\": \"none\",\n  \"fallbacks\": []\n}",
+    "streamSettings": "{\n  \"network\": \"tcp\",\n  \"security\": \"none\",\n  \"tcpSettings\": {\n    \"acceptProxyProtocol\": false,\n    \"header\": {\n      \"type\": \"http\",\n      \"request\": {\n        \"method\": \"GET\",\n        \"path\": [\n          \"/\"\n        ],\n        \"headers\": {\n          \"Host\": [\n            \"speedtest.net\"\n          ],\n          \"Referer\": [\n            \"snapp.ir\"\n          ]\n        }\n      },\n      \"response\": {\n        \"version\": \"1.1\",\n        \"status\": \"200\",\n        \"reason\": \"OK\",\n        \"headers\": {}\n      }\n    }\n  }\n}",
+    "tag": "inbound-22918",
+    "sniffing": "{\n  \"enabled\": true,\n  \"destOverride\": [\n    \"http\",\n    \"tls\"\n  ]\n}"
+  },
+  {
+    "id": 5,
+    "up": 1130077163,
+    "down": 39689784716,
+    "total": 107374182400,
+    "remark": "sadra ganbarnezhad",
+    "enable": true,
+    "expiryTime": 1723408140000,
+    "clientStats": [
+      {
+        "id": 4,
+        "inboundId": 5,
+        "enable": true,
+        "email": "uih458@x-ui-english.dev",
+        "up": 14260928322,
+        "down": 533216341538,
+        "expiryTime": 0,
+        "total": 0
+      }
+    ],
+    "listen": "",
+    "port": 43207,
+    "protocol": "vless",
+    "settings": "{\n  \"clients\": [\n    {\n      \"id\": \"b0dd04d6-1f17-45bc-9d71-9420ae234a3e\",\n      \"flow\": \"xtls-rprx-direct\",\n      \"email\": \"uih458@x-ui-english.dev\",\n      \"limitIp\": \"4\",\n      \"totalGB\": 0,\n      \"expiryTime\": 0\n    }\n  ],\n  \"decryption\": \"none\",\n  \"fallbacks\": []\n}",
+    "streamSettings": "{\n  \"network\": \"tcp\",\n  \"security\": \"none\",\n  \"tcpSettings\": {\n    \"acceptProxyProtocol\": false,\n    \"header\": {\n      \"type\": \"http\",\n      \"request\": {\n        \"method\": \"GET\",\n        \"path\": [\n          \"/\"\n        ],\n        \"headers\": {\n          \"Host\": [\n            \"speedtest.net\"\n          ],\n          \"Referer\": [\n            \"digikala.com\"\n          ]\n        }\n      },\n      \"response\": {\n        \"version\": \"1.1\",\n        \"status\": \"200\",\n        \"reason\": \"OK\",\n        \"headers\": {}\n      }\n    }\n  }\n}",
+    "tag": "inbound-43207",
+    "sniffing": "{\n  \"enabled\": true,\n  \"destOverride\": [\n    \"http\",\n    \"tls\"\n  ]\n}"
+  },
+  {
+    "id": 6,
+    "up": 143073626,
+    "down": 3870300242,
+    "total": 64424509440,
+    "remark": "reza mashhadifam",
+    "enable": true,
+    "expiryTime": 1724272140000,
+    "clientStats": [
+      {
+        "id": 6,
+        "inboundId": 6,
+        "enable": true,
+        "email": "eqj5i2@x-ui-english.dev",
+        "up": 3714024500,
+        "down": 104883651988,
+        "expiryTime": 0,
+        "total": 0
+      }
+    ],
+    "listen": "",
+    "port": 15220,
+    "protocol": "vless",
+    "settings": "{\n  \"clients\": [\n    {\n      \"id\": \"c28d59fa-f295-4924-8796-c81b4bfced7e\",\n      \"flow\": \"xtls-rprx-direct\",\n      \"email\": \"eqj5i2@x-ui-english.dev\",\n      \"limitIp\": \"2\",\n      \"totalGB\": 0,\n      \"expiryTime\": 0\n    }\n  ],\n  \"decryption\": \"none\",\n  \"fallbacks\": []\n}",
+    "streamSettings": "{\n  \"network\": \"ws\",\n  \"security\": \"none\",\n  \"wsSettings\": {\n    \"acceptProxyProtocol\": false,\n    \"path\": \"/\",\n    \"headers\": {}\n  }\n}",
+    "tag": "inbound-15220",
+    "sniffing": "{\n  \"enabled\": true,\n  \"destOverride\": [\n    \"http\",\n    \"tls\"\n  ]\n}"
+  },
+  {
+    "id": 7,
+    "up": 257698107,
+    "down": 8059479930,
+    "total": 42949672960,
+    "remark": "reza dezhbani",
+    "enable": true,
+    "expiryTime": 1725481740000,
+    "clientStats": [
+      {
+        "id": 12,
+        "inboundId": 7,
+        "enable": true,
+        "email": "nxlcu0@x-ui-english.dev",
+        "up": 13280533603,
+        "down": 388068429523,
+        "expiryTime": 0,
+        "total": 0
+      }
+    ],
+    "listen": "",
+    "port": 48980,
+    "protocol": "vless",
+    "settings": "{\n  \"clients\": [\n    {\n      \"id\": \"cfa594a5-5b78-47e7-909a-5fea400c1052\",\n      \"flow\": \"xtls-rprx-direct\",\n      \"email\": \"nxlcu0@x-ui-english.dev\",\n      \"limitIp\": \"2\",\n      \"totalGB\": 0,\n      \"expiryTime\": 0\n    }\n  ],\n  \"decryption\": \"none\",\n  \"fallbacks\": []\n}",
+    "streamSettings": "{\n  \"network\": \"tcp\",\n  \"security\": \"none\",\n  \"tcpSettings\": {\n    \"acceptProxyProtocol\": false,\n    \"header\": {\n      \"type\": \"http\",\n      \"request\": {\n        \"method\": \"GET\",\n        \"path\": [\n          \"/\"\n        ],\n        \"headers\": {\n          \"Host\": [\n            \"speedtest.net\"\n          ],\n          \"Referer\": [\n            \"digikala.com\"\n          ]\n        }\n      },\n      \"response\": {\n        \"version\": \"1.1\",\n        \"status\": \"200\",\n        \"reason\": \"OK\",\n        \"headers\": {}\n      }\n    }\n  }\n}",
+    "tag": "inbound-48980",
+    "sniffing": "{\n  \"enabled\": true,\n  \"destOverride\": [\n    \"http\",\n    \"tls\"\n  ]\n}"
+  },
+  {
+    "id": 8,
+    "up": 5231437361,
+    "down": 198881606857,
+    "total": 0,
+    "remark": "Parivash",
+    "enable": true,
+    "expiryTime": 0,
+    "clientStats": [],
+    "listen": "",
+    "port": 14525,
+    "protocol": "vless",
+    "settings": "{\n  \"clients\": [\n    {\n      \"id\": \"f5190fd7-1504-4191-8af2-f368b435ff42\",\n      \"flow\": \"xtls-rprx-direct\",\n      \"email\": \"\",\n      \"limitIp\": 0,\n      \"totalGB\": 0,\n      \"expiryTime\": \"\"\n    }\n  ],\n  \"decryption\": \"none\",\n  \"fallbacks\": []\n}",
+    "streamSettings": "{\n  \"network\": \"tcp\",\n  \"security\": \"none\",\n  \"tcpSettings\": {\n    \"acceptProxyProtocol\": false,\n    \"header\": {\n      \"type\": \"http\",\n      \"request\": {\n        \"method\": \"GET\",\n        \"path\": [\n          \"/\"\n        ],\n        \"headers\": {\n          \"Host\": [\n            \"speedtest.net\",\n            \"digikala.com\"\n          ]\n        }\n      },\n      \"response\": {\n        \"version\": \"1.1\",\n        \"status\": \"200\",\n        \"reason\": \"OK\",\n        \"headers\": {}\n      }\n    }\n  }\n}",
+    "tag": "inbound-14525",
+    "sniffing": "{\n  \"enabled\": true,\n  \"destOverride\": [\n    \"http\",\n    \"tls\"\n  ]\n}"
+  },
+  {
+    "id": 9,
+    "up": 608549488,
+    "down": 10131078006,
+    "total": 10737418240,
+    "remark": "parham eslahi",
+    "enable": false,
+    "expiryTime": 0,
+    "clientStats": [
+      {
+        "id": 37,
+        "inboundId": 9,
+        "enable": true,
+        "email": "p8zpaf@x-ui-english.dev",
+        "up": 1556453918,
+        "down": 25851494404,
+        "expiryTime": 0,
+        "total": 0
+      }
+    ],
+    "listen": "",
+    "port": 13616,
+    "protocol": "vless",
+    "settings": "{\n  \"clients\": [\n    {\n      \"id\": \"981eeb33-ea09-4174-9159-372caa9d7539\",\n      \"flow\": \"xtls-rprx-direct\",\n      \"email\": \"p8zpaf@x-ui-english.dev\",\n      \"limitIp\": 4,\n      \"totalGB\": 0,\n      \"expiryTime\": 0\n    }\n  ],\n  \"decryption\": \"none\",\n  \"fallbacks\": []\n}",
+    "streamSettings": "{\n  \"network\": \"tcp\",\n  \"security\": \"none\",\n  \"tcpSettings\": {\n    \"acceptProxyProtocol\": false,\n    \"header\": {\n      \"type\": \"http\",\n      \"request\": {\n        \"method\": \"GET\",\n        \"path\": [\n          \"/\"\n        ],\n        \"headers\": {\n          \"Host\": [\n            \"google.com\"\n          ],\n          \"Referer\": [\n            \"digikala.com\"\n          ]\n        }\n      },\n      \"response\": {\n        \"version\": \"1.1\",\n        \"status\": \"200\",\n        \"reason\": \"OK\",\n        \"headers\": {}\n      }\n    }\n  }\n}",
+    "tag": "inbound-13616",
+    "sniffing": "{\n  \"enabled\": true,\n  \"destOverride\": [\n    \"http\",\n    \"tls\"\n  ]\n}"
+  },
+  {
+    "id": 11,
+    "up": 4173196885,
+    "down": 30637893799,
+    "total": 42949672960,
+    "remark": "paria nasiri",
+    "enable": true,
+    "expiryTime": 1723408140000,
+    "clientStats": [
+      {
+        "id": 89,
+        "inboundId": 11,
+        "enable": true,
+        "email": "95lkxi@x-ui-english.dev",
+        "up": 26157001362,
+        "down": 192275672756,
+        "expiryTime": 0,
+        "total": 0
+      }
+    ],
+    "listen": "",
+    "port": 49717,
+    "protocol": "vless",
+    "settings": "{\n  \"clients\": [\n    {\n      \"id\": \"b1759f98-75ec-444c-abed-8b7dafad3651\",\n      \"flow\": \"xtls-rprx-direct\",\n      \"email\": \"95lkxi@x-ui-english.dev\",\n      \"limitIp\": 2,\n      \"totalGB\": 0,\n      \"expiryTime\": 0\n    }\n  ],\n  \"decryption\": \"none\",\n  \"fallbacks\": []\n}",
+    "streamSettings": "{\n  \"network\": \"ws\",\n  \"security\": \"none\",\n  \"wsSettings\": {\n    \"acceptProxyProtocol\": false,\n    \"path\": \"/\",\n    \"headers\": {}\n  }\n}",
+    "tag": "inbound-49717",
+    "sniffing": "{\n  \"enabled\": true,\n  \"destOverride\": [\n    \"http\",\n    \"tls\"\n  ]\n}"
+  },
+  {
+    "id": 12,
+    "up": 320674140,
+    "down": 1764110755,
+    "total": 2147483648,
+    "remark": "parsa pashazade",
+    "enable": false,
+    "expiryTime": 0,
+    "clientStats": [
+      {
+        "id": 95,
+        "inboundId": 12,
+        "enable": false,
+        "email": "szk6x9@x-ui-english.dev",
+        "up": 0,
+        "down": 0,
+        "expiryTime": 1707164940000,
+        "total": 21474836480
+      },
+      {
+        "id": 97,
+        "inboundId": 12,
+        "enable": true,
+        "email": "hp8ous@x-ui-english.dev",
+        "up": 2812594330,
+        "down": 66982641619,
+        "expiryTime": 0,
+        "total": 0
+      }
+    ],
+    "listen": "",
+    "port": 19922,
+    "protocol": "vless",
+    "settings": "{\n  \"clients\": [\n    {\n      \"id\": \"45f425e8-6b8d-42a2-a8f1-9225a9abfe17\",\n      \"flow\": \"xtls-rprx-direct\",\n      \"email\": \"hp8ous@x-ui-english.dev\",\n      \"limitIp\": 2,\n      \"totalGB\": 0,\n      \"expiryTime\": 0\n    }\n  ],\n  \"decryption\": \"none\",\n  \"fallbacks\": []\n}",
+    "streamSettings": "{\n  \"network\": \"tcp\",\n  \"security\": \"none\",\n  \"tcpSettings\": {\n    \"acceptProxyProtocol\": false,\n    \"header\": {\n      \"type\": \"http\",\n      \"request\": {\n        \"method\": \"GET\",\n        \"path\": [\n          \"/\"\n        ],\n        \"headers\": {\n          \"Host\": [\n            \"speedtest.net\"\n          ],\n          \"Referer\": [\n            \"digikala.com\"\n          ]\n        }\n      },\n      \"response\": {\n        \"version\": \"1.1\",\n        \"status\": \"200\",\n        \"reason\": \"OK\",\n        \"headers\": {}\n      }\n    }\n  }\n}",
+    "tag": "inbound-19922",
+    "sniffing": "{\n  \"enabled\": true,\n  \"destOverride\": [\n    \"http\",\n    \"tls\"\n  ]\n}"
+  },
+  {
+    "id": 15,
+    "up": 11909113,
+    "down": 482775759,
+    "total": 0,
+    "remark": "sss",
+    "enable": true,
+    "expiryTime": 0,
+    "clientStats": [
+      {
+        "id": 107,
+        "inboundId": 15,
+        "enable": false,
+        "email": "b3x1f1@x-ui-english.dev",
+        "up": 0,
+        "down": 0,
+        "expiryTime": 1711571340000,
+        "total": 21474836480
+      }
+    ],
+    "listen": "",
+    "port": 18571,
+    "protocol": "vless",
+    "settings": "{\n  \"clients\": [\n    {\n      \"id\": \"f72b0104-b06f-4c53-9521-0fb908501a0a\",\n      \"flow\": \"xtls-rprx-direct\",\n      \"email\": \"\",\n      \"limitIp\": 0,\n      \"totalGB\": 0,\n      \"expiryTime\": \"\"\n    }\n  ],\n  \"decryption\": \"none\",\n  \"fallbacks\": []\n}",
+    "streamSettings": "{\n  \"network\": \"grpc\",\n  \"security\": \"none\",\n  \"grpcSettings\": {\n    \"serviceName\": \"cdn.discordapp.com\"\n  }\n}",
+    "tag": "inbound-18571",
+    "sniffing": "{\n  \"enabled\": true,\n  \"destOverride\": [\n    \"http\",\n    \"tls\"\n  ]\n}"
+  },
+  {
+    "id": 16,
+    "up": 353216626,
+    "down": 15300525704,
+    "total": 21474836480,
+    "remark": "azam ganbarnezhad",
+    "enable": true,
+    "expiryTime": 0,
+    "clientStats": [
+      {
+        "id": 108,
+        "inboundId": 16,
+        "enable": false,
+        "email": "kjek99@x-ui-english.dev",
+        "up": 0,
+        "down": 0,
+        "expiryTime": 1711571340000,
+        "total": 21474836480
+      },
+      {
+        "id": 109,
+        "inboundId": 16,
+        "enable": true,
+        "email": "88eo07@x-ui-english.dev",
+        "up": 0,
+        "down": 0,
+        "expiryTime": 0,
+        "total": 21474836480
+      },
+      {
+        "id": 114,
+        "inboundId": 16,
+        "enable": true,
+        "email": "zo25gynh@x-ui-english.dev",
+        "up": 348792936,
+        "down": 15371405203,
+        "expiryTime": 0,
+        "total": 0
+      }
+    ],
+    "listen": "",
+    "port": 45675,
+    "protocol": "vless",
+    "settings": "{\n  \"clients\": [\n    {\n      \"id\": \"45f425e8-6b8d-42a2-a8f1-9225a9abfe17\",\n      \"flow\": \"xtls-rprx-direct\",\n      \"email\": \"zo25gynh@x-ui-english.dev\",\n      \"limitIp\": \"\",\n      \"totalGB\": 0,\n      \"expiryTime\": \"\"\n    }\n  ],\n  \"decryption\": \"none\",\n  \"fallbacks\": []\n}",
+    "streamSettings": "{\n  \"network\": \"tcp\",\n  \"security\": \"none\",\n  \"tcpSettings\": {\n    \"acceptProxyProtocol\": false,\n    \"header\": {\n      \"type\": \"http\",\n      \"request\": {\n        \"method\": \"GET\",\n        \"path\": [\n          \"/\"\n        ],\n        \"headers\": {\n          \"Host\": [\n            \"google.com\"\n          ],\n          \"Referer\": [\n            \"snapp.ir\"\n          ]\n        }\n      },\n      \"response\": {\n        \"version\": \"1.1\",\n        \"status\": \"200\",\n        \"reason\": \"OK\",\n        \"headers\": {}\n      }\n    }\n  }\n}",
+    "tag": "inbound-45675",
+    "sniffing": "{\n  \"enabled\": true,\n  \"destOverride\": [\n    \"http\",\n    \"tls\"\n  ]\n}"
+  },
+  {
+    "id": 17,
+    "up": 389221936,
+    "down": 15787764106,
+    "total": 21474836480,
+    "remark": "mehri azimi",
+    "enable": false,
+    "expiryTime": 1718742540000,
+    "clientStats": [
+      {
+        "id": 110,
+        "inboundId": 17,
+        "enable": true,
+        "email": "gt154y@x-ui-english.dev",
+        "up": 0,
+        "down": 0,
+        "expiryTime": 0,
+        "total": 21474836480
+      },
+      {
+        "id": 111,
+        "inboundId": 17,
+        "enable": true,
+        "email": "6r2bcp@x-ui-english.dev",
+        "up": 0,
+        "down": 0,
+        "expiryTime": 0,
+        "total": 0
+      },
+      {
+        "id": 112,
+        "inboundId": 17,
+        "enable": true,
+        "email": "4h5chp@x-ui-english.dev",
+        "up": 162120966,
+        "down": 1348209119,
+        "expiryTime": 0,
+        "total": 0
+      }
+    ],
+    "listen": "",
+    "port": 25927,
+    "protocol": "vless",
+    "settings": "{\n  \"clients\": [\n    {\n      \"id\": \"a0c64768-619e-4cf2-90ae-cc8a23f69222\",\n      \"flow\": \"xtls-rprx-direct\",\n      \"email\": \"4h5chp@x-ui-english.dev\",\n      \"limitIp\": 2,\n      \"totalGB\": 0,\n      \"expiryTime\": 0\n    }\n  ],\n  \"decryption\": \"none\",\n  \"fallbacks\": []\n}",
+    "streamSettings": "{\n  \"network\": \"tcp\",\n  \"security\": \"none\",\n  \"tcpSettings\": {\n    \"acceptProxyProtocol\": false,\n    \"header\": {\n      \"type\": \"http\",\n      \"request\": {\n        \"method\": \"GET\",\n        \"path\": [\n          \"/\"\n        ],\n        \"headers\": {\n          \"Host\": [\n            \"speedtest.net\"\n          ],\n          \"Referer\": [\n            \"digikala.com\"\n          ]\n        }\n      },\n      \"response\": {\n        \"version\": \"1.1\",\n        \"status\": \"200\",\n        \"reason\": \"OK\",\n        \"headers\": {}\n      }\n    }\n  }\n}",
+    "tag": "inbound-25927",
+    "sniffing": "{\n  \"enabled\": true,\n  \"destOverride\": [\n    \"http\",\n    \"tls\"\n  ]\n}"
+  },
+  {
+    "id": 18,
+    "up": 23605778,
+    "down": 287525911,
+    "total": 21474836480,
+    "remark": "mehri azimi",
+    "enable": false,
+    "expiryTime": 1718742540695,
+    "clientStats": [],
+    "listen": "",
+    "port": 46879,
+    "protocol": "vless",
+    "settings": "{\n  \"clients\": [\n    {\n      \"id\": \"433e6082-5ac8-41dd-8013-d3f667dd927b\",\n      \"flow\": \"xtls-rprx-direct\",\n      \"email\": \"\",\n      \"limitIp\": 0,\n      \"totalGB\": 0,\n      \"expiryTime\": \"\"\n    }\n  ],\n  \"decryption\": \"none\",\n  \"fallbacks\": []\n}",
+    "streamSettings": "{\n  \"network\": \"ws\",\n  \"security\": \"none\",\n  \"wsSettings\": {\n    \"acceptProxyProtocol\": false,\n    \"path\": \"/\",\n    \"headers\": {}\n  }\n}",
+    "tag": "inbound-46879",
+    "sniffing": "{\n  \"enabled\": true,\n  \"destOverride\": [\n    \"http\",\n    \"tls\"\n  ]\n}"
+  },
+  {
+    "id": 19,
+    "up": 21237632,
+    "down": 2562195630,
+    "total": 42949672960,
+    "remark": "vahid dezhbani",
+    "enable": true,
+    "expiryTime": 1725827340000,
+    "clientStats": [
+      {
+        "id": 116,
+        "inboundId": 19,
+        "enable": true,
+        "email": "29tmm9@x-ui-english.dev",
+        "up": 0,
+        "down": 0,
+        "expiryTime": 0,
+        "total": 0
+      },
+      {
+        "id": 117,
+        "inboundId": 19,
+        "enable": true,
+        "email": "bcmav6@x-ui-english.dev",
+        "up": 535244345,
+        "down": 60126810960,
+        "expiryTime": 0,
+        "total": 0
+      }
+    ],
+    "listen": "",
+    "port": 54814,
+    "protocol": "vless",
+    "settings": "{\n  \"clients\": [\n    {\n      \"id\": \"43ae3d11-0a2e-42ea-81e8-f8ee7b7a1d32\",\n      \"flow\": \"xtls-rprx-direct\",\n      \"email\": \"bcmav6@x-ui-english.dev\",\n      \"limitIp\": 2,\n      \"totalGB\": 0,\n      \"expiryTime\": \"\"\n    }\n  ],\n  \"decryption\": \"none\",\n  \"fallbacks\": []\n}",
+    "streamSettings": "{\n  \"network\": \"ws\",\n  \"security\": \"none\",\n  \"wsSettings\": {\n    \"acceptProxyProtocol\": false,\n    \"path\": \"/\",\n    \"headers\": {\n      \"Host\": \"speedtest.net\"\n    }\n  }\n}",
+    "tag": "inbound-54814",
+    "sniffing": "{\n  \"enabled\": true,\n  \"destOverride\": [\n    \"http\",\n    \"tls\"\n  ]\n}"
+  },
+  {
+    "id": 20,
+    "up": 1953667979,
+    "down": 38860147386,
+    "total": 64424509440,
+    "remark": "nasim jabali",
+    "enable": true,
+    "expiryTime": 1723494540000,
+    "clientStats": [
+      {
+        "id": 119,
+        "inboundId": 20,
+        "enable": true,
+        "email": "uw6jb7@x-ui-english.dev",
+        "up": 4660580263,
+        "down": 77982697012,
+        "expiryTime": 0,
+        "total": 0
+      }
+    ],
+    "listen": "",
+    "port": 18845,
+    "protocol": "vless",
+    "settings": "{\n  \"clients\": [\n    {\n      \"id\": \"8365ab40-6c66-4a7e-9e30-08071d7ce837\",\n      \"flow\": \"xtls-rprx-direct\",\n      \"email\": \"uw6jb7@x-ui-english.dev\",\n      \"limitIp\": 4,\n      \"totalGB\": 0,\n      \"expiryTime\": 0\n    }\n  ],\n  \"decryption\": \"none\",\n  \"fallbacks\": []\n}",
+    "streamSettings": "{\n  \"network\": \"ws\",\n  \"security\": \"none\",\n  \"wsSettings\": {\n    \"acceptProxyProtocol\": false,\n    \"path\": \"/\",\n    \"headers\": {\n      \"Host\": \"speedtest.net\"\n    }\n  }\n}",
+    "tag": "inbound-18845",
+    "sniffing": "{\n  \"enabled\": true,\n  \"destOverride\": [\n    \"http\",\n    \"tls\"\n  ]\n}"
+  },
+  {
+    "id": 21,
+    "up": 3260262528,
+    "down": 50451134882,
+    "total": 64424509440,
+    "remark": "navid dezhbani",
+    "enable": true,
+    "expiryTime": 1723667340000,
+    "clientStats": [
+      {
+        "id": 120,
+        "inboundId": 21,
+        "enable": true,
+        "email": "pw1uyvfnl@x-ui-english.dev",
+        "up": 5097947389,
+        "down": 104043178745,
+        "expiryTime": 0,
+        "total": 0
+      }
+    ],
+    "listen": "",
+    "port": 56432,
+    "protocol": "vless",
+    "settings": "{\n  \"clients\": [\n    {\n      \"id\": \"c6c0176c-33f4-46b7-f031-752590dac249\",\n      \"flow\": \"xtls-rprx-direct\",\n      \"email\": \"pw1uyvfnl@x-ui-english.dev\",\n      \"limitIp\": 2,\n      \"totalGB\": 0,\n      \"expiryTime\": \"\"\n    }\n  ],\n  \"decryption\": \"none\",\n  \"fallbacks\": []\n}",
+    "streamSettings": "{\n  \"network\": \"tcp\",\n  \"security\": \"none\",\n  \"tcpSettings\": {\n    \"acceptProxyProtocol\": false,\n    \"header\": {\n      \"type\": \"http\",\n      \"request\": {\n        \"method\": \"GET\",\n        \"path\": [\n          \"/\"\n        ],\n        \"headers\": {\n          \"Host\": [\n            \"speedtest.net\"\n          ],\n          \"Referer\": [\n            \"digikala.com\"\n          ]\n        }\n      },\n      \"response\": {\n        \"version\": \"1.1\",\n        \"status\": \"200\",\n        \"reason\": \"OK\",\n        \"headers\": {}\n      }\n    }\n  }\n}",
+    "tag": "inbound-56432",
+    "sniffing": "{\n  \"enabled\": true,\n  \"destOverride\": [\n    \"http\",\n    \"tls\"\n  ]\n}"
+  },
+  {
+    "id": 22,
+    "up": 107129120,
+    "down": 2270662262,
+    "total": 21474836480,
+    "remark": "tohid bageri",
+    "enable": true,
+    "expiryTime": 1723753740000,
+    "clientStats": [
+      {
+        "id": 126,
+        "inboundId": 22,
+        "enable": false,
+        "email": "qyjzol@x-ui-english.dev",
+        "up": 0,
+        "down": 0,
+        "expiryTime": 1718310540000,
+        "total": 1073741824
+      },
+      {
+        "id": 136,
+        "inboundId": 22,
+        "enable": true,
+        "email": "sp2d7s@x-ui-english.dev",
+        "up": 231073989,
+        "down": 7740343968,
+        "expiryTime": 0,
+        "total": 0
+      }
+    ],
+    "listen": "",
+    "port": 40446,
+    "protocol": "vless",
+    "settings": "{\n  \"clients\": [\n    {\n      \"id\": \"07eda619-4b5a-4683-86c4-ca51187bcc0f\",\n      \"flow\": \"xtls-rprx-direct\",\n      \"email\": \"sp2d7s@x-ui-english.dev\",\n      \"limitIp\": 2,\n      \"totalGB\": 0,\n      \"expiryTime\": 0\n    }\n  ],\n  \"decryption\": \"none\",\n  \"fallbacks\": []\n}",
+    "streamSettings": "{\n  \"network\": \"tcp\",\n  \"security\": \"none\",\n  \"tcpSettings\": {\n    \"acceptProxyProtocol\": false,\n    \"header\": {\n      \"type\": \"http\",\n      \"request\": {\n        \"method\": \"GET\",\n        \"path\": [\n          \"/\"\n        ],\n        \"headers\": {\n          \"Host\": [\n            \"speedtest.net\"\n          ],\n          \"Referer\": [\n            \"google.com\"\n          ]\n        }\n      },\n      \"response\": {\n        \"version\": \"1.1\",\n        \"status\": \"200\",\n        \"reason\": \"OK\",\n        \"headers\": {}\n      }\n    }\n  }\n}",
+    "tag": "inbound-40446",
+    "sniffing": "{\n  \"enabled\": true,\n  \"destOverride\": [\n    \"http\",\n    \"tls\"\n  ]\n}"
+  },
+  {
+    "id": 25,
+    "up": 8756301,
+    "down": 60647554,
+    "total": 42949672960,
+    "remark": "amir hosein babayi",
+    "enable": true,
+    "expiryTime": 1725395340000,
+    "clientStats": [
+      {
+        "id": 150,
+        "inboundId": 25,
+        "enable": true,
+        "email": "mkvhx9@x-ui-english.dev",
+        "up": 457181,
+        "down": 35160261,
+        "expiryTime": 0,
+        "total": 0
+      },
+      {
+        "id": 152,
+        "inboundId": 25,
+        "enable": true,
+        "email": "pc17zs@x-ui-english.dev",
+        "up": 802826085,
+        "down": 15488932323,
+        "expiryTime": 0,
+        "total": 0
+      }
+    ],
+    "listen": "",
+    "port": 10030,
+    "protocol": "vless",
+    "settings": "{\n  \"clients\": [\n    {\n      \"id\": \"e76dcc91-4e95-4adb-914c-c1e1856e8f0c\",\n      \"flow\": \"xtls-rprx-direct\",\n      \"email\": \"pc17zs@x-ui-english.dev\",\n      \"limitIp\": 2,\n      \"totalGB\": 0,\n      \"expiryTime\": 0\n    }\n  ],\n  \"decryption\": \"none\",\n  \"fallbacks\": []\n}",
+    "streamSettings": "{\n  \"network\": \"tcp\",\n  \"security\": \"none\",\n  \"tcpSettings\": {\n    \"acceptProxyProtocol\": false,\n    \"header\": {\n      \"type\": \"http\",\n      \"request\": {\n        \"method\": \"GET\",\n        \"path\": [\n          \"/\"\n        ],\n        \"headers\": {\n          \"Host\": [\n            \"speedtest.net\"\n          ],\n          \"Referer\": [\n            \"snapp.ir\"\n          ]\n        }\n      },\n      \"response\": {\n        \"version\": \"1.1\",\n        \"status\": \"200\",\n        \"reason\": \"OK\",\n        \"headers\": {}\n      }\n    }\n  }\n}",
+    "tag": "inbound-10030",
+    "sniffing": "{\n  \"enabled\": false,\n  \"destOverride\": [\n    \"http\",\n    \"tls\"\n  ]\n}"
+  },
+  {
+    "id": 27,
+    "up": 39833512,
+    "down": 1755524313,
+    "total": 42949672960,
+    "remark": "hosein ganbarnezhad",
+    "enable": false,
+    "expiryTime": 1720643340000,
+    "clientStats": [
+      {
+        "id": 153,
+        "inboundId": 27,
+        "enable": true,
+        "email": "x64uzo@x-ui-english.dev",
+        "up": 39166648,
+        "down": 1762891823,
+        "expiryTime": 0,
+        "total": 0
+      }
+    ],
+    "listen": "",
+    "port": 60418,
+    "protocol": "vless",
+    "settings": "{\"clients\":[{\"id\":\"244aa146-52f1-40d9-9fd2-4a7dcf5cbdbd\",\"flow\":\"xtls-rprx-direct\",\"email\":\"x64uzo@x-ui-english.dev\",\"limitIp\":2,\"totalGB\":0,\"expiryTime\":0}],\"decryption\":\"none\",\"fallbacks\":[]}",
+    "streamSettings": "{\"network\":\"tcp\",\"security\":\"none\",\"tcpSettings\":{\"acceptProxyProtocol\":false,\"header\":{\"type\":\"http\",\"request\":{\"method\":\"GET\",\"path\":[\"/\"],\"headers\":{\"Host\":[\"google.com\"],\"Referer\":[\"snapp.ir\"]}},\"response\":{\"version\":\"1.1\",\"status\":\"200\",\"reason\":\"OK\",\"headers\":{}}}}}",
+    "tag": "inbound-60418",
+    "sniffing": "{\"sniffing\":{\"enabled\":true,\"destOverride\":[\"http\",\"tls\"]}}"
+  },
+  {
+    "id": 29,
+    "up": 8039,
+    "down": 53605,
+    "total": 0,
+    "remark": "1",
+    "enable": true,
+    "expiryTime": 0,
+    "clientStats": [],
+    "listen": "",
+    "port": 21077,
+    "protocol": "vmess",
+    "settings": "{\n  \"clients\": [\n    {\n      \"id\": \"02cdc13b-3ce7-421e-e4ab-b111de7e718d\",\n      \"alterId\": 0,\n      \"email\": \"\",\n      \"limitIp\": 0,\n      \"totalGB\": 0,\n      \"expiryTime\": \"\"\n    }\n  ],\n  \"disableInsecureEncryption\": false\n}",
+    "streamSettings": "{\n  \"network\": \"grpc\",\n  \"security\": \"none\",\n  \"grpcSettings\": {\n    \"serviceName\": \"\"\n  }\n}",
+    "tag": "inbound-21077",
+    "sniffing": "{\n  \"enabled\": true,\n  \"destOverride\": [\n    \"http\",\n    \"tls\"\n  ]\n}"
+  },
+  {
+    "id": 30,
+    "up": 7245695,
+    "down": 88901042,
+    "total": 0,
+    "remark": "۲",
+    "enable": true,
+    "expiryTime": 0,
+    "clientStats": [],
+    "listen": "",
+    "port": 35981,
+    "protocol": "vless",
+    "settings": "{\n  \"clients\": [\n    {\n      \"id\": \"beb01f00-d8f7-44e4-dd85-562a9f8d02e5\",\n      \"flow\": \"xtls-rprx-direct\",\n      \"email\": \"\",\n      \"limitIp\": 0,\n      \"totalGB\": 0,\n      \"expiryTime\": \"\"\n    }\n  ],\n  \"decryption\": \"none\",\n  \"fallbacks\": []\n}",
+    "streamSettings": "{\n  \"network\": \"kcp\",\n  \"security\": \"none\",\n  \"kcpSettings\": {\n    \"mtu\": 1350,\n    \"tti\": 20,\n    \"uplinkCapacity\": 5,\n    \"downlinkCapacity\": 20,\n    \"congestion\": false,\n    \"readBufferSize\": 2,\n    \"writeBufferSize\": 2,\n    \"header\": {\n      \"type\": \"none\"\n    },\n    \"seed\": \"PEy8NOdSqL\"\n  }\n}",
+    "tag": "inbound-35981",
+    "sniffing": "{\n  \"enabled\": true,\n  \"destOverride\": [\n    \"http\",\n    \"tls\"\n  ]\n}"
+  },
+  {
+    "id": 31,
+    "up": 46079908,
+    "down": 2545860513,
+    "total": 0,
+    "remark": "laptop",
+    "enable": true,
+    "expiryTime": 0,
+    "clientStats": [],
+    "listen": "",
+    "port": 23362,
+    "protocol": "vless",
+    "settings": "{\n  \"clients\": [\n    {\n      \"id\": \"ad370ca2-843f-48f2-92e8-97c3f202cabf\",\n      \"flow\": \"xtls-rprx-direct\",\n      \"email\": \"\",\n      \"limitIp\": 0,\n      \"totalGB\": 0,\n      \"expiryTime\": \"\"\n    }\n  ],\n  \"decryption\": \"none\",\n  \"fallbacks\": []\n}",
+    "streamSettings": "{\n  \"network\": \"ws\",\n  \"security\": \"none\",\n  \"wsSettings\": {\n    \"acceptProxyProtocol\": false,\n    \"path\": \"/\",\n    \"headers\": {\n      \"Host\": \"speedtest.net\"\n    }\n  }\n}",
+    "tag": "inbound-23362",
+    "sniffing": "{\n  \"enabled\": true,\n  \"destOverride\": [\n    \"http\",\n    \"tls\"\n  ]\n}"
+  }
+]
