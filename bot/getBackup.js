@@ -1,7 +1,7 @@
 const { default: axios } = require("axios");
 const fs = require('fs')
 
-const { V2RAY_API_URL, V2RAY_PASSWORD, V2RAY_USERNAME, V2RAY_TOKEN } = process.env
+const { V2RAY_API_URL, V2RAY_TOKEN } = process.env
 
 const getConfigs = async bot => {
     const configs = (await axios.post(`${V2RAY_API_URL}/xui/inbound/list`, {}, {

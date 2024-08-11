@@ -3,8 +3,9 @@ const { getConfigs } = require('./getBackup');
 const path = require('path')
 const fs = require('fs')
 const cron = require('node-cron');
+const { USER_TELEGRAM_CHATID, BOT_TOKEN } = process.env
 
-const bot = new Telegraf('6702289698:AAEgjePDdCmEYyhxw7vvzgcTtjzoJ1iBSRA');
+const bot = new Telegraf(BOT_TOKEN);
 const startTelegramBot = async () =>{
     const jsonFilePath = path.join(__dirname, '..', 'data.json');
 
@@ -22,22 +23,19 @@ const startTelegramBot = async () =>{
     }
   })
   cron.schedule('0 * * * *', async () => {
-    getConfigs(bot)
-    bot.telegram.sendMessage('5803093467', 'salam')
-
-  // Read the JSON file
-  try {
-    // Send the JSON file as a document
-    await bot.telegram.sendDocument(5803093467, {
-      source: jsonFilePath,
-      filename: 'data.json',
-      contentType: 'application/json'
-    });
-  } catch (error) {
-    // console.error('Error sending document:', error);
-    ctx.reply('Error occurred while sending the file.');
-  }
-})
+      try {
+      getConfigs(bot)
+      // Send the JSON file as a document
+      await bot.telegram.sendDocument(USER_TELEGRAM_CHATID, {
+        source: jsonFilePath,
+        filename: 'data.json',
+        contentType: 'application/json'
+      });
+    } catch (error) {
+      // console.error('Error sending document:', error);
+      ctx.reply('Error occurred while sending the file.');
+    }
+  })
     bot.launch();
 }
 
