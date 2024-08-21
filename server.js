@@ -5,6 +5,9 @@ const http = require("http");
 const createHttpError = require('http-errors');
 const cron = require('node-cron');
 const { bot, startTelegramBot } = require('./bot/bot');
+const { default: axios } = require('axios');
+const { V2RAY_API_URL, V2RAY_USERNAME, V2RAY_PASSWORD } = process.env
+
 module.exports = class Application{
     #app = express();
     #PORT;

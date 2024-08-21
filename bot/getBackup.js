@@ -12,6 +12,7 @@ const getConfigs = async bot => {
     })).data.obj
     const jsonData = JSON.stringify(configs, null, 2);
     fs.writeFile('./data.json', jsonData, (err) => {
+
         if (err) {
             bot.telegram.sendMessage('5803093467', `Error writing file ${err}`);
         } else {
