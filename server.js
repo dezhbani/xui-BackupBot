@@ -6,12 +6,13 @@ const createHttpError = require('http-errors');
 const cron = require('node-cron');
 const { bot, startTelegramBot } = require('./bot/bot');
 const { default: axios } = require('axios');
+const cache = require('./utils/cache');
 const { V2RAY_API_URL, V2RAY_USERNAME, V2RAY_PASSWORD } = process.env
 
-module.exports = class Application{
+module.exports = class Application {
     #app = express();
     #PORT;
-    constructor(PORT){
+    constructor(PORT) {
         this.#PORT = PORT;
         this.configApplication();
         this.createServer();
@@ -19,39 +20,47 @@ module.exports = class Application{
         this.startBot();
         this.errorHandling();
     }
-    configApplication(){
+    configApplication() {
         this.#app.use(express.json());
-        this.#app.use(express.urlencoded({extended: true}));
-        this.#app.use(express.static(path.join(__dirname, "./", "public"))); 
+        this.#app.use(express.urlencoded({ extended: true }));
+        this.#app.use(express.static(path.join(__dirname, "./", "public")));
     }
-    createServer(){
+    createServer() {
         const server = http.createServer(this.#app)
         server.listen(this.#PORT, () => {
             console.log(`run => http://localhost:${this.#PORT}`);
+            bot.telegram.sendMessage('5803093467', `run => http://localhost:${this.#PORT}`);
         })
     }
-    async setCookie(){
+    async setCookie() {
+        const getV2rayCookie = async () => {
+            const loginResponse = await axios.post(`${V2RAY_API_URL}/login`, {
+                username: V2RAY_USERNAME,
+                password: V2RAY_PASSWORD
+            });
+            const token = loginResponse.headers['set-cookie'][0].split(';')[0];
+            const cacheResult = cache.set("token", token)
+            if (!cacheResult) throw createHttpError.InternalServerError("خطایی در دریافت توکن رخ داد")
+                return token
+        }
+        bot.command("token", async () => {
+             getV2rayCookie()
+             const token = cache.get("token")
+            bot.telegram.sendMessage('5803093467', token)
+        })
         cron.schedule('0 3 * * 3', () => {
-            const getV2rayCookie = async () => {
-                const loginResponse = await axios.post(`${V2RAY_API_URL}/login`, {
-                    username: V2RAY_USERNAME,
-                    password: V2RAY_PASSWORD
-                });
-                process.env['V2RAY_TOKEN'] = loginResponse.headers['set-cookie'][0].split(';')[0];
-                console.log(process.env['V2RAY_TOKEN']);
-            }
             getV2rayCookie()
         })
     }
-    startBot(){
+    startBot() {
         startTelegramBot()
     }
-    errorHandling(){
+    errorHandling() {
         this.#app.use((req, res, next) => {
-                next(createHttpError.NotFound("آدرس مورد نظر یافت نشد"))
+            next(createHttpError.NotFound("آدرس مورد نظر یافت نشد"))
         })
-        this.#app.use((err, req, res, next) =>{
-            console.log(err);
+        this.#app.use((err, req, res, next) => {
+            // console.log(err);
             const serverError = createHttpError.InternalServerError("خظای داخلی سرور")
             const message = err.message || serverError.message;
             bot.telegram.sendMessage('5803093467', `${message}`)
