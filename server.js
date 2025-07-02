@@ -7,6 +7,7 @@ const cron = require('node-cron');
 const { bot, startTelegramBot } = require('./bot/bot');
 const { default: axios } = require('axios');
 const cache = require('./utils/cache');
+const { configService } = require('./services/config.service');
 const { V2RAY_API_URL, V2RAY_USERNAME, V2RAY_PASSWORD } = process.env
 
 module.exports = class Application {
@@ -34,23 +35,20 @@ module.exports = class Application {
     }
     async setCookie() {
         const getV2rayCookie = async () => {
-            const loginResponse = await axios.post(`${V2RAY_API_URL}/login`, {
-                username: V2RAY_USERNAME,
-                password: V2RAY_PASSWORD
-            });
-            const token = loginResponse.headers['set-cookie'][0].split(';')[0];
+            const token = await configService.loginPanel()
             const cacheResult = cache.set("token", token)
             if (!cacheResult) throw createHttpError.InternalServerError("خطایی در دریافت توکن رخ داد")
                 return token
         }
         bot.command("token", async () => {
-             getV2rayCookie()
-             const token = cache.get("token")
+            getV2rayCookie()
+            const token = cache.get("token")
             bot.telegram.sendMessage('5803093467', token)
         })
         cron.schedule('0 3 * * 3', () => {
             getV2rayCookie()
         })
+        getV2rayCookie()
     }
     startBot() {
         startTelegramBot()
