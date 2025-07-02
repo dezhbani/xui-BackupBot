@@ -8,6 +8,7 @@ const { USER_TELEGRAM_CHATID, BOT_TOKEN } = process.env
 const bot = new Telegraf(BOT_TOKEN);
 
 const cache = require("../utils/cache");
+const { getFilenameByCurrentTime } = require('../utils/helpers');
 
 const startTelegramBot = async () => {
   const V2RAY_TOKEN = cache.get('token')
@@ -21,18 +22,21 @@ const startTelegramBot = async () => {
     
     fs.mkdirSync(dirPath, { recursive: true });
   }
-
+  
   console.log(jsonFilePath);
   // const dir = path.join(__dirname, '..', 'temp');
   bot.command('get', async ctx => {
     try {
       const result = await getConfigs(bot)
+      const filename = `${getFilenameByCurrentTime()}.json`
       // Send the JSON file as a document
       !!result && await ctx.replyWithDocument({
         source: jsonFilePath,
-        filename: 'data.json',
+        filename,
         contentType: 'application/json'
       });
+      await bot.telegram.sendMessage(USER_TELEGRAM_CHATID, '#auto')
+
     } catch (error) {
       console.error('Error sending document:', error);
       ctx.reply('Error occurred while sending the file.');
@@ -67,12 +71,15 @@ const startTelegramBot = async () => {
   cron.schedule('*/30 * * * *', async () => {
     try {
       const result = await getConfigs(bot)
+      const filename = `${getFilenameByCurrentTime()}.json`
+
       // Send the JSON file as a document
       !!result && await bot.telegram.sendDocument(USER_TELEGRAM_CHATID, {
         source: jsonFilePath,
-        filename: 'data.json',
+        filename,
         contentType: 'application/json'
       });
+      await bot.telegram.sendMessage(USER_TELEGRAM_CHATID, '#auto')
     } catch (error) {
       console.error('Error sending document:', error);
       ctx.reply('Error occurred while sending the file.');
