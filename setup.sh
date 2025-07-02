@@ -9,10 +9,15 @@ command_exists () {
 install_node_with_nvm () {
     echo "Installing nvm (Node Version Manager)..."
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
-    source ~/.bashrc
+    
+    # Load nvm into the current shell session
+    export NVM_DIR="$HOME/.nvm"
+    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+    [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
     echo "Installing the latest LTS version of Node.js..."
     nvm install --lts
+    nvm use --lts
 
     echo "Node.js installation complete."
 }
@@ -63,8 +68,7 @@ echo "Copy the following SSH key and add it to your GitHub account (https://gith
 echo
 cat ~/.ssh/id_ed25519.pub
 echo
-echo "After adding the SSH key to your GitHub account, press [Enter] to continue."
-read -p ""
+read -p "After adding the SSH key to your GitHub account, press [Enter] to continue."
 
 # Create a new directory for the bot project
 read -p "Enter the name of the project folder to create: " project_name
@@ -94,12 +98,17 @@ else
     install_node_with_nvm
 fi
 
+# Load nvm environment (in case it was installed just now)
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
 # Install pm2 globally
 if command_exists pm2; then
     echo "pm2 is already installed."
 else
     echo "Installing pm2..."
-    sudo npm install -g pm2
+    npm install -g pm2
     echo "pm2 installation complete."
 fi
 
@@ -109,6 +118,6 @@ npm install
 
 # Start the project with pm2
 echo "Starting the project with pm2..."
-pm2 start index.js --name "$project_name"  # Ensure 'index.js' is correct or replace with the actual entry file
+pm2 start index.js --name "$project_name"  # اگر فایل ورودی متفاوت است جایگزین کن
 
 echo "Setup complete! Your project is now running with pm2."
